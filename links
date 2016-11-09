@@ -1,0 +1,26 @@
+install redmine (not same as dockerfile)
+
+http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_30x_on_Ubuntu_1404_with_Apache2_Phusion_Passenger_MySQL_Subversion_and_Git_(Gitolite)
+
+http://www.linuxmissive.com/2015/10/install-redmine-30x-on-ubuntu-1404.html
+
+https://gist.github.com/konklone/6662393
+
+ldap auth
+
+http://www.redmine.org/projects/redmine/wiki/RedmineLDAP
+
+
+
+------------------------------------------------------------
+
+
+to find passenger error logs only
+passenger-config --detect-apache2
+
+
+key-for download the redmine
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+default language
+run RAILS_ENV=production REDMINE_LANG=fr bundle exec rake redmine:load_default_data
